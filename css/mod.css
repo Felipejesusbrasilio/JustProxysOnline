@@ -1,0 +1,45 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body 
+{
+	background-color: black;
+}
+
+.container 
+{
+	background-color: white;
+	padding: 15px;
+}
+
+.container p 
+{
+	font-family: arial;
+	font-weight: 600;
+}
+
+.container form button 
+{
+	border-style: none;
+	padding: 15px;
+	font-family: arial;
+	font-weight: 600;
+	border: 3px solid black;
+}
+
+
+.container form button:hover
+{
+	background-color: #ADFF2F;
+	transition: 0.6s;
+}
+
+.container form button:not(:hover)
+{
+	background-color: none;
+	transition: 0.6s;
+}

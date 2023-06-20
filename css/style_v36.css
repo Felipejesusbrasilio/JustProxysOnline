@@ -1,0 +1,1515 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#voltar
+{
+	text-decoration: none;
+}
+
+.cadastrar
+{
+	
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	background-color: #0049B7;
+	display: none;
+}
+
+#Modal-cadastrar
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+}
+
+.cadastrar #Modal-cadastrar .Quadro-cadastrar
+{
+	/*border: 1px solid red;*/
+	width: 50%;
+	height: 50%;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	overflow: auto;
+	border-radius: 2px;
+}
+
+.cadastrar #Modal-cadastrar .Quadro-cadastrar form
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+	padding: 10px;
+}
+
+.cadastrar #Modal-cadastrar .Quadro-cadastrar form input
+{
+	width: 50%;
+}
+
+.cadastrar #Modal-cadastrar .Quadro-cadastrar form button 
+{
+	width: 100%;
+	height: 100px;
+	margin-top: 10px;
+	border-style: none;
+	background-color: #32CD32;
+	color: white;
+	font-weight: 600;
+	border-style: none;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.cadastrar #Modal-cadastrar .Quadro-cadastrar form button:hover
+{
+	background-color: #228B22;
+}
+
+header
+{
+	width: 100%;
+	max-height: 100%;
+	background-color: #0049B7;
+}
+
+header .Row 
+{
+	/*border: 1px solid white;*/
+	width: 100%;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+header .Row #flex
+{
+	/*border: 1px solid red;*/
+	border-radius: 1px;
+	display: flex;
+	align-items: center;
+}
+
+header .Row #flex a 
+{
+	margin-left: 10px;
+	text-decoration: none;
+	color: var(--bs-body-color);
+	font-family: arial;
+}
+
+header .Row #flex a:hover
+{
+	color: #778899;
+}
+
+header .Row .Quadros-header
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 80px;
+	display: grid;
+	place-items: center;
+	background-color: white;
+	padding: 5px;
+	border-radius: 1px;
+}
+
+header .Row .Quadros-header h1
+{
+	font-family: arial;
+}
+
+header .fretes 
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 100px;
+	display: flex;
+}
+
+header .fretes .frete-direcao
+{
+	/*border: 1px solid black;*/
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 15px;
+}
+
+header .fretes .frete-direcao p 
+{
+	margin-top: 10px;
+	color: white;
+	font-weight: 600;
+}
+
+header .fretes .frete-direcao input
+{
+	text-align: center;
+	font-weight: 600;
+	border-radius: 1px;
+	border-style: none;
+	width: 80%;
+}
+
+header .fretes .frete-direcao input:focus
+{
+  outline: 0;
+}
+
+header .fretes .frete-direcao button
+{
+	border-style: none;
+	background: none;
+}
+
+.Painel 
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 100%;
+	margin-top: 200px;
+	display: flex;
+}
+
+.Painel .ajuste 
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 100%;
+}
+
+.Painel .Quadros-painel
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 100%;
+}
+
+.Painel .Quadros-painel .overflow
+{
+	/*border: 1px solid black;*/
+	width: 50%;
+	height: 100px;
+	overflow: auto;
+	padding: 5px;
+}
+
+.Painel .Quadros-painel .overflow p 
+{
+	text-transform: uppercase;
+}
+
+.Painel-produtos
+{
+	/*border: 1px solid black;*/
+	border-radius: 1px;
+	width: 100%;
+	height: 100%;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.Painel-produtos .title-produtos
+{
+	max-width: 100%;
+	max-height: 100%;
+	display: grid;
+	place-items: center;
+	font-family: arial;
+}
+
+.Painel-produtos .body-produtos
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+}
+
+.Painel-produtos .body-produtos img
+{
+	width: 100%;
+	height: 100%;
+}
+
+.Painel-produtos .body-produtos img:hover
+{
+	transform: scale(2.0);
+	transition: 0.6s;
+}
+
+.Painel-produtos .body-produtos img:not(:hover)
+{
+	transform: scale(1.0);
+	transition: 0.6s;
+}
+
+.Painel-produtos .body-valor
+{
+    /*border: 1px solid black;*/
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	place-items: center;
+}
+
+.Painel-produtos .body-valor h1
+{
+	text-transform: uppercase;
+	font-family: arial;
+}
+
+.Painel-produtos .body-descricao
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 100%;
+	padding-left: 10px;
+}
+
+.Painel-produtos .body-descricao p 
+{
+	font-family: arial;
+	font-weight: 600;
+}
+
+.Painel-produtos .select-tamanho
+{
+	/*border: 1px solid red;*/
+	max-width: 100%;
+	max-height: 100%;
+	padding-left: 10px;
+}
+
+.Painel-produtos .select-tamanho button 
+{
+  width: 100px;
+	height: 50px;
+	margin-left: 10px;
+	background-color: #0049B7;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	border-radius: 25px;
+	border-style: none;
+	color: white;
+}
+
+.Painel-produtos .select-tamanho button:hover::before
+{
+	content: '';
+	position: absolute;
+	margin-top: -10px;
+	margin-left: -10px;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	background-color: #F5F5F5;
+	opacity: 0;
+	animation: animar_button 1s;
+}
+
+@keyframes animar_button
+{
+	from{opacity: 0.7; width: 30px; height: 30px;}
+	to{opacity: 0; width: 100px; height: 100px;}
+}
+
+.Painel-produtos .select-tamanho select 
+{
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	border-style: none;
+}
+
+.Painel-produtos .select-tamanho label 
+{
+	font-weight: 600;
+}
+
+.Painel-produtos .body-button
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+}
+
+.Painel-produtos .body-button .status_produto
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	padding-left: 15px;
+}
+
+.Painel-produtos .body-button .status_produto p 
+{
+	font-weight: 600;
+	color: #32CD32;
+	animation: animar_status 0.6s infinite;
+}
+
+.Painel-produtos .body-button .status_produto .red 
+{
+	color: red;
+}
+
+@keyframes animar_status{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+
+.Painel-produtos .body-button button 
+{
+	width: 100%;
+	height: 150px;
+	background-color: #32CD32;
+	color: white;
+	font-weight: 600;
+	border-style: none;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+.Painel-produtos .body-button button:hover
+{
+  background-color: #228B22;
+}
+
+.Quadros-painel
+{
+	/*border: 1px solid red;*/
+	border-radius: 1px;
+}
+
+.Quadros-painel .title
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #0049B7;
+	padding: 10px;
+}
+
+.Quadros-painel .title .Quadros_carrinho
+{
+	/*border: 1px solid red;*/
+	border-radius: 1px;
+	width: 50%;
+	height: 100%;
+	background-color: white;
+}
+
+.Quadros-painel .title .Quadros_carrinho #Over 
+{
+	/*border: 1px solid red;*/
+	height: 80px;
+	overflow: auto;
+}
+
+.Quadros-painel .title #centralizar_button
+{
+	display: grid;
+	place-items: center;
+}
+
+.Quadros-painel #centralizar_button  #pix_car
+{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+}
+
+#formulario_carrinho_pix
+{
+	display: flex;
+}
+
+.Quadros-painel .title #centralizar_button button 
+{
+	padding: 10px;
+	width: 100%;
+  font-weight: 600;
+  border-style: none;
+  background-color: #32CD32;
+  color: white;
+  border-radius: 1px;
+}
+
+.Quadros-painel .title #centralizar_button #get
+{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.Quadros-painel .title #centralizar_button #get svg
+{
+	margin-top: -10px;
+}
+
+.Quadros-painel .title #centralizar_button button:hover
+{
+	background-color: #228B22;
+	transition: 0.6s;
+}
+
+.Quadros-painel .title #centralizar_button input 
+{
+	border-style: none;
+	background-color: white;
+	text-align: center;
+	color: #778899;
+	border-radius: 1px;
+}
+
+.Quadros-painel .title #centralizar_button input::placeholder
+{
+	color: #778899;
+	font-weight: 600;
+}
+
+.Quadros-painel .title #centralizar_button input:focus 
+{
+	outline: none;
+}
+
+.Quadros-painel .title #centralizar_button #btn_blue
+{
+	background-color: white;
+	margin-left: 10px;
+	border-radius: 1px;
+}
+
+.Quadros-painel .title #centralizar_button #btn_blue img:hover
+{
+	transform: rotate(90deg);
+}
+
+.Quadros-painel .title h1
+{
+	font-size: 20px;
+	color: white;
+	font-family: arial;
+}
+
+.Quadros-painel .body-lista
+{
+	/*border: 1px solid black;*/
+	width: 50%;
+	position: fixed;
+	padding: 10px;
+}
+
+.Quadros-painel .body-lista .body-button
+{
+	/*border: 1px solid blue;*/
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.Quadros-painel .body-lista .wallpaper_banner_painel
+{
+	/*border: 1px solid red;*/
+	margin-top: 2px;
+	width: 100%;
+	height: 180px;
+	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.Quadros-painel .body-lista .wallpaper_banner_painel img
+{
+	width: 100%;
+	height: 178px;
+	margin-left: 0px;
+	animation: animar_img 3s infinite;
+}
+
+@keyframes animar_img{
+	0%{transform: scale(1.0);}
+	50%{transform: scale(2.0);}
+	100%{transform: scale(1.0);}
+}
+
+.Quadros-painel .body-lista .body-button .formularios
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+}
+
+.Quadros-painel .body-lista .body-button .formularios form p 
+{
+	text-transform: uppercase;
+}
+
+.Quadros-painel .body-lista .body-button .formularios form button 
+{
+	background-color: white;
+	color: #778899;
+	border-radius: 1px;
+	box-shadow: none;
+}
+
+.Quadros-painel .body-lista .body-button .formularios form button:hover
+{
+	background-color: #778899;
+	color: white;
+	transition: 0.6s;
+}
+
+.Quadros-painel .body-lista p 
+{
+	font-weight: 600;
+	font-family: arial;
+	margin-left: 5px;
+}
+
+.Quadros-painel .body-lista img 
+{
+	margin-left: 5px;
+}
+
+.Quadros-painel .body-lista button 
+{
+	border-style: none;
+	width: 100%;
+	height: 80px;
+	background-color: black;
+	color: white;
+	font-weight: 600;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.Quadros-painel .body-lista button:hover
+{
+	color: #778899;
+}
+
+.Painel .Quadros-painel .forme-fretes
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	background-color: #F5F5F5;
+}
+
+.Painel .Quadros-painel .forme-fretes form
+{
+	/*border: 1px solid white;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Painel .Quadros-painel .forme-fretes label
+{
+	color: #778899;
+	margin-left: 5px;
+	font-weight: 600;
+}
+
+.Painel .Quadros-painel .forme-fretes input 
+{
+	border-style: none;
+	border-radius: 1px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.Painel .Quadros-painel .forme-fretes input:focus 
+{
+	outline: none;
+}
+
+.Painel .Quadros-painel .forme-fretes button 
+{
+	border-style: none;
+	width: 50%;
+	background-color: white;
+	color: #778899;
+	border-radius: 1px;
+	font-weight: 600;
+}
+
+.Painel .Quadros-painel .forme-fretes button:hover
+{
+	background-color: #778899;
+	transition: 0.6s;
+	color: white;
+}
+
+.Painel .Quadros-painel #color 
+{
+	background-color: #32CD32;
+	color: white;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+.Painel .Quadros-painel #color:hover
+{
+	background-color: #228B22;
+	color: white;
+}
+
+.Painel .Quadros-painel #Openpix
+{
+	background-color: white;
+	color: #778899;
+	box-shadow: none;
+}
+
+.Painel .Quadros-painel #Openpix:hover
+{
+	background-color: #778899;
+	color: white;
+	transition: 0.6s;
+}
+
+.Painel .Quadros-painel #personalizar
+{
+	/*border: 1px solid #0049B7;*/
+	background-color: white;
+	color: #778899;
+	border-style: none;
+	text-align: center;
+	border-radius: 1px;
+}
+
+.Painel .Quadros-painel #personalizar:focus
+{
+	outline: none;
+}
+
+.Painel .Quadros-painel #personalizar::placeholder
+{
+	color: #778899;
+	font-weight: 600;
+}
+
+footer
+{
+	/*border: 1px solid black;*/
+	max-width: 100%;
+	height: 559px;
+	background-color: white;
+}
+
+footer .blackfriday
+{
+	/*border: 1px solid black;*/
+}
+
+footer .blackfriday h1
+{
+	font-weight: 600;
+	font-family: arial;
+	animation: colors 0.6s infinite;
+	padding: 15px;
+}
+
+footer .termos
+{
+	/*border: 1px solid black;*/
+	display: grid;
+	padding-left: 15px;
+}
+
+footer .termos a 
+{
+	margin-top: 10px;
+	text-transform: uppercase;
+	color: var(--bs-body-color);
+	font-weight: 600;
+}
+
+footer .termos a:hover
+{
+	color: #778899;
+}
+
+footer a 
+{
+	text-decoration: none;
+}
+
+footer .termos button 
+{
+	border-style: none;
+	background-color: #F5F5F5;
+	color: #778899;
+}
+
+footer .termos button:hover
+{
+	background-color: #778899;
+	color: white;
+	transition: 0.6s; 
+}
+
+footer .termos div
+{
+	display: none;
+}
+
+footer .termos div p
+{
+  font-weight: 600;
+}
+
+footer .redes
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+footer .redes .lg-redes
+{
+	/*border: 1px solid black;*/
+	width: 100px;
+	height: 100%;
+	display: grid;
+	place-items: center;
+}
+
+footer .redes .redes-title
+{
+	border: 1px solid #778899;
+	width: 100%;
+	height: 100%;
+	margin-left: 10px;
+	padding-top: 25px;
+	padding-left: 25px;
+}
+
+footer .redes .redes-title:hover
+{
+	background-color: #778899;
+	color: white;
+	transition: 0.6s;
+}
+
+footer .redes .redes-title a 
+{
+	text-decoration: none;
+	font-family: arial;
+	color: var(--bs-heading-color,inherit);
+	font-weight: 600;
+}
+
+
+.Painelpix
+{
+	display: none;
+}
+
+.modalpix
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	display: grid;
+	place-items: center;
+}
+
+.modalpix .CentralizandoPix
+{
+	/*border: 1px solid red;*/
+	width: 50%;
+	height: 100%;
+	background-color: white;
+	padding: 10px;
+}
+
+.modalpix .CentralizandoPix .closepix
+{
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.modalpix .CentralizandoPix .linhapix
+{
+	/*border: 1px solid red;*/
+}
+
+
+.modalpix .CentralizandoPix .linhapix textarea 
+{
+	width: 100%;
+	border-style: none;
+}
+
+.modalPix .CentralizandoPix h1
+{
+	color: white;
+}
+
+.painel-menu-categorias
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 40%;
+	background-color: transparent;
+	display: none;
+}
+
+.painel-menu-categorias .painel-menu-categorias_close
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 80px;
+	background-color: white;
+}
+
+.painel-menu-categorias .painel-menu-categorias_close h1
+{
+	font-family: arial;
+	position: absolute;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+
+.painel-menu-categorias .painel-menu-categorias_close svg
+{
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.painel-menu-categorias .painel-menu-categoria_padding
+{
+  /*border: 2px solid #0049B7;*/
+	width: 100%;
+	height: 120px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+}
+
+.painel-menu-categorias .painel-menu-categoria_padding .painel-menu-categoria_quadros
+{
+  /*border: 1px solid #778899;*/
+	width: 100px;
+	height: 100px;
+	border-radius: 5px;
+	overflow: hidden;
+	opacity: 0;
+}
+
+.painel-menu-categorias .painel-menu-categoria_padding .painel-menu-categoria_quadros img 
+{
+	width: 100%;
+	height: 100%;
+}
+
+.painel-menu-categorias .painel-menu-categoria_padding .painel-menu-categoria_quadros img:hover
+{
+	transform: scale(2.0);
+	transition: 0.6s;
+}
+
+.painel-menu-categorias .painel-menu-categoria_padding .painel-menu-categoria_quadros img:not(:hover)
+{
+	transform: scale(1.0);
+	transition: 0.6s;
+}
+
+.central_pix
+{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+
+.central_pix_quadro
+{
+  width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+	background-color: transparent;
+}
+
+.central_pix .central_pix_quadro .central_pix_wallpaper
+{
+	/*border: 1px solid red;*/
+	width: 50%;
+	height: 80%;
+}
+
+.central_pix .central_pix_quadro .central_pix_wallpaper img 
+{
+	width: 100%;
+	height: 100%;
+}
+
+
+@media only screen and (max-width: 1280px)
+{
+	.Quadros-painel .title #centralizar_button input 
+	{
+		border-style: none;
+		width: 100%;
+	}
+
+	.Quadros-painel .body-lista .wallpaper_banner
+   {
+   	display: none;
+   }
+
+   .Quadros-painel .body-lista .wallpaper_banner_painel img
+   {
+   	display: none;
+   }
+
+   .Quadros-painel .title #centralizar_button #btn_blue
+	  {
+			background-color: white;
+			margin-left: 0px;
+		}
+
+		.Quadros-painel .title #centralizar_button input 
+		{
+			border-radius: 10px 0px 0px 10px;
+		}
+
+		.Quadros-painel #centralizar_button  #pix_car
+		{
+			display: none;
+		}	
+
+		.central_pix .central_pix_quadro .central_pix_wallpaper
+		{
+			height: 50%;
+		}
+
+}
+
+
+@media only screen and (max-width: 1024px)
+{
+	.Quadros-painel .title #centralizar_button 
+	{
+		/*border: 1px solid red;*/
+		flex-wrap: wrap;
+	}
+
+	.Quadros-painel .title #centralizar_button input 
+	{
+		border-style: none;
+		width: 100%;
+		border-radius: 15px 0px 0px 15px;
+	}
+
+	.Quadros-painel .title #centralizar_button button 
+	{
+		width: 100px;
+		font-size: 12px;
+	}
+
+	.cadastrar #Modal-cadastrar .Quadro-cadastrar form button
+   {
+   	 height: 50px;
+   } 
+
+	.forme-fretes form 
+	{
+    display: flex;
+    flex-wrap: wrap;
+	}
+
+	.forme-fretes form button 
+	{
+		margin-top: 10px;
+		padding: 5px;
+	}
+
+	.ajuste .title .Quadros_carrinho 
+	{
+		display: grid;
+	}
+
+	.Quadros-painel .body-lista .wallpaper_banner
+   {
+   	display: block;
+   	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   }
+
+   .Quadros-painel .body-lista .wallpaper_banner_painel img
+   {
+   	display: block;
+   }
+
+   .Quadros-painel .title #centralizar_button #btn_blue
+   {
+   	 margin-left: 0px;
+   	 border-radius: 0px;
+   	 box-shadow: none;
+   }
+
+   .Quadros-painel .title #centralizar_button input 
+		{
+			border-radius: 10px 0px 0px 10px;
+		}
+
+		.Quadros-painel .title #centralizar_button button
+		{
+			box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+		}	
+
+}
+
+
+@media only screen and (max-width:600px)
+{
+   
+   header .fretes .frete-direcao
+   {
+   	
+   	float: none;
+   	width: 100%;
+   	height: 100%;
+   	flex-wrap: wrap;
+   }
+
+   header .fretes .frete-direcao
+   {
+   	flex-wrap: wrap;
+   }
+
+   header .Row .Quadros-header h1
+   {
+   	 font-size: 15px;
+   	 color: black;
+   }
+    
+   .cadastrar #Modal-cadastrar .Quadro-cadastrar form button
+   {
+   	 height: 50px;
+   } 
+    
+   .Painel .ajuste
+   {
+   	 /*border: 1px solid red;*/
+     width: 50%;
+   }
+
+   .Painel .ajuste svg
+   {
+   	 margin-right: 10px;
+   }
+
+   .Painel-produtos
+   {
+   	box-shadow: none;
+   }
+
+   .Painel-produtos .body-valor h1
+   {
+   	font-size: 15px;
+   }
+
+   .Painel-produtos .body-descricao p
+   {
+   	font-size: 12px;
+   }
+
+   .Quadros-painel .title .Quadros_carrinho
+   {
+   	 width: 100%;
+   }
+
+   .Quadros-painel .title .Quadros_carrinho #Over 
+   {
+   	 height: 30px;
+   }
+   
+   .Quadros-painel .title
+   {
+   	padding: 5px;
+   	flex-wrap: wrap;
+   } 
+   
+   .Quadros-painel .title .Quadros_carrinho
+   {
+   	 /*border: 1px solid black;*/
+   	 height: 30px;
+   }	
+
+   .Quadros-painel .title #centralizar_button
+   {
+   	 place-items: revert;
+   }
+
+   .Quadros-painel .title #centralizar_button button
+   {
+   	width: 100%;
+   	border-radius: 0px;
+   	font-size: 10px;
+   }
+
+   .Quadros-painel .title #centralizar_button input
+   {
+   	 width: 50%;
+   	 height: 30px;
+   	 border-radius: 0px;
+   	 box-shadow: none;
+   } 
+
+   .Quadros-painel #centralizar_button  #pix_car
+		{
+			display: block;
+			width: 25px;
+			height: 25px;
+			margin-top: 3px;
+		}  
+
+   .Quadros-painel .title .Quadros_carrinho button 
+   {
+   	 width: 100%;
+   	 height: 30px;
+   	 font-size: 12px;
+   	 font-weight: 600;
+   	 border-style: none;
+   	 background-color: #32CD32;
+   	 color: white;
+   }
+
+   .Quadros-painel .title #centralizar_button #btn_blue
+   {
+   	 width: 30%;
+   	 margin-left: 0px;
+   	 border-radius: 0px;
+   	 box-shadow: none;
+   }
+
+   .Quadros-painel .title #centralizar_button input 
+   {
+    color: #778899;
+   	width: 70%;
+   	border-style: none;
+   }
+
+   .Quadros-painel .title #centralizar_button input::placeholder
+   {
+   	font-size: 12px;
+   }
+
+   .Quadros-painel .title #centralizar_button #btn_blue img 
+   {
+
+   	 width: 33px;
+   	 height: 30px;
+   	 margin-top: -12.5px;
+   	 box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   	 margin-left: -9px;
+   	 position: absolute;
+   }
+
+   .Quadros-painel .title h1
+   {
+   	 font-weight: 600;
+   	 font-size: 12px;
+   } 
+
+   .Painel-produtos .body-button button
+   {
+   	width: 100%;
+   	height: 50px;
+   }
+
+   .Quadros-painel .body-lista
+   {
+   	width: 50%;
+   	/*border: 1px solid blue;*/
+   	display: grid;
+   	align-items: center;
+   	padding: 0px;
+   }
+   
+   .Quadros-painel .body-lista button 
+   {
+   	 width: 50%;
+   	 height: 40px;
+   	 font-size: 10px;
+   }
+
+   .Quadros-painel .body-lista p
+   {
+   	 font-weight: normal;
+   }
+
+   .Quadros-painel .body-lista .wallpaper_banner
+   {
+   	display: none;
+   }
+    
+   .Quadros-painel .body-lista .wallpaper_banner_painel
+   {
+     /*border: 1px solid black;*/
+     width: 50%;
+     height: 48px;
+     overflow: hidden;
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   }
+
+   .Quadros-painel .body-lista .wallpaper_banner_painel img
+   {
+   	display: block;
+   	width: 100%;
+   	height: 48px;
+   }
+
+   .Quadros-painel .body-lista .body-button .formularios form
+   {
+     display: grid;
+   }
+
+   .Quadros-painel .body-lista .body-button .formularios form button 
+   {
+   	 height: 40px;
+   	 border-radius: 0px;
+   }
+
+   .Painel .Quadros-painel .forme-fretes
+   {
+   	 padding: 0px;
+   }
+
+   .Painel .Quadros-painel .forme-fretes form 
+   {
+   	 display: grid;
+   }
+   
+   .Painel .Quadros-painel .forme-fretes form input 
+   {
+   	width: 100%;
+   }  
+
+   .Painel .Quadros-painel .forme-fretes form button
+   {
+   	 width: 100%;
+   	 height: 50px;
+   	 margin-top: 10px;
+   	 font-size: 12px;
+   	 border-radius: 0px;
+   	 box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   }
+
+   .cadastrar #Modal-cadastrar
+   {
+   	/*border: 1px solid red;*/
+   	width: 100%;
+   }
+
+   .cadastrar #Modal-cadastrar .Quadro-cadastrar
+   {
+   	margin-top: 120px;
+   	width: 100%;
+    padding: 10px;
+   }
+   
+   .cadastrar #Modal-cadastrar .Quadro-cadastrar form
+   {
+   	padding: 10px;
+   }
+
+   .cadastrar #Modal-cadastrar .Quadro-cadastrar form input
+   {
+   	 width: 100%;
+   }
+
+   .Painel .ajuste p 
+   {
+   	font-size: 10px;
+   } 
+
+   .Painel .Quadros-painel .overflow
+   {
+   	 /*border: 1px solid red;*/
+   	 width: 50%;
+   	 height: 50px;
+   }
+
+   .Painel .Quadros-painel #personalizar
+   {
+     width: 50%;
+   }
+
+   footer a 
+   {
+   	font-size: 15px;
+   }
+
+   .modalpix
+   {
+   	display: flex;
+   }
+
+   .modalpix .CentralizandoPix
+   {
+   	 width: 100%;
+   }
+
+   .painel-menu-categorias .painel-menu-categoria_padding
+   {
+   	 padding: 0px;
+   	 justify-content: center;
+   	 align-items: center;
+   	 padding-right: 10px;
+   	 padding-left: 5px;
+   }
+
+   .painel-menu-categorias .painel-menu-categoria_padding .painel-menu-categoria_quadros
+   {
+    margin-left: 5px;
+   }
+
+   .central_pix .central_pix_quadro .central_pix_wallpaper
+   {
+   	width: 80%;
+   }
+
+}
+
+
+@media only screen and (max-width:375px)
+{
+	.Painel .Quadros-painel 
+	{
+		width: 75%;
+	}
+
+  .Quadros-painel #centralizar_button #pix_car
+  {
+  	display: none;
+  }
+
+  .Quadros-painel #centralizar_button svg
+  {
+  	position: absolute;
+  	margin-left: -15px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .Quadros-painel .title #centralizar_button #btn_blue img
+  {
+  	width: 30px;
+  	height: 30px;
+  }
+
+  .Painel .Quadros-painel .forme-fretes label
+  {
+  	font-size: 12px;
+  }
+
+  .Painel .Quadros-painel .forme-fretes form input::placeholder 
+  {
+  	font-size: 12px;
+  }
+
+}
+
+
+
+@media only screen and (max-width:280px)
+{
+  .Painel .Quadros-painel 
+	 {
+     width: 70%;  
+	 }
+
+  .Quadros-painel .title h1
+   {
+   	font-size: 10px;
+   }
+
+   .Painel .Quadros-painel .overflow p
+   {
+   	font-size: 8px;
+   }
+   
+   .Quadros-painel .title #centralizar_button #btn_blue img
+   {
+   	width: 10px;
+   }
+
+   .Quadros-painel .body-lista .body-button .formularios button
+   {
+   	font-size: 8px;
+   }
+
+   .Quadros-painel .title #centralizar_button #btn_blue img
+   {
+   	margin-left: -10px;
+   	width: 25px;
+   	height: 30px;
+   }
+
+   .Quadros-painel .title #centralizar_button button
+   {
+   	font-size: 8px;
+   }
+
+   .Quadros-painel .body-lista button
+   {
+   	font-size: 8px;
+   }
+
+   .Painel .Quadros-painel .forme-fretes button
+   {
+   	font-size: 8px;
+   }
+
+   .Painel .Quadros-painel .forme-fretes label
+   {
+   	font-size: 10px;
+   }
+
+   .Painel .Quadros-painel .forme-fretes form input::placeholder
+   {
+   	font-size: 10px;
+   }
+
+   .painel-menu-categorias
+   {
+   	width: 100%;
+   }
+
+   .painel-menu-categorias .painel-menu-categoria_padding
+   {
+   	width: 100%;
+   }
+
+   .painel-menu-categorias .painel-menu-categoria_padding .painel-menu-categoria_quadros
+   {
+   	 width: 50px;
+   	 height: 50px;
+   }
+
+}
