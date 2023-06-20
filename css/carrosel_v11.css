@@ -1,0 +1,196 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.slider-carossel
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 1050px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.slider-carossel .icon_car
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 50px;
+	display: flex;
+}
+
+.slider-carossel .icon_car #ajuste_div
+{
+	width: 20%;
+}
+
+.slider-carossel .icon_car .quadros_icon 
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+}
+
+.slider-carossel .icon_car .quadros_icon  h4
+{
+	font-family: arial;
+	margin-top: 10px;
+	margin-left: 15px;
+	color: black;
+	animation: piscar 0.6s infinite;
+}
+
+.slider-carossel .carrosel
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 450px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.slider-carossel .carrosel .quadros-carrosel
+{
+	/*border: 1px solid black;*/
+	width: 50%;
+	height: 500px;
+	overflow: hidden;
+}
+
+
+.slider-carossel .carrosel .quadros-carrosel img
+{
+	width: 100%;
+	height: 100%;
+}
+
+.slider-carossel svg
+{
+	float: right;
+	margin-right: 5px;
+	margin-top: 8px;
+	color: #32CD32;
+	animation: full_colors 1.5s infinite;
+}
+
+@keyframes full_colors
+{
+	from{color: white}
+	to{color: #32CD32;}
+}
+
+@keyframes piscar
+{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+
+.slider-carossel .carrosel #div_central img
+{
+  border-radius: 50%;	
+}
+
+
+.slider-carossel .carrosel #animar
+{
+  animation: animar 3s infinite;
+}
+
+@keyframes animar 
+{
+	0%{transform: scale(1.0);}
+	50%{transform: scale(2.0);}
+	100%{transform: scale(1.0);}
+}
+
+
+@media only screen and (max-width:1280px)
+{
+
+.slider-carossel .icon_car .quadros_icon  h4
+{
+	font-family: arial;
+	margin-top: 10px;
+	margin-left: 15px;
+	font-size: 15px;
+	color: black;
+}
+
+.slider-carossel
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 510px;
+}
+
+.slider-carossel .carrosel .quadros-carrosel
+{
+	height: 230px;
+}
+
+
+}
+
+
+@media only screen and (max-width:1024px)
+{
+
+.slider-carossel .icon_car .quadros_icon  h4
+{
+	font-family: arial;
+	margin-top: 10px;
+	margin-left: 15px;
+	font-size: 15px;
+	color: black;
+}
+
+.slider-carossel
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 510px;
+}
+
+.slider-carossel .carrosel .quadros-carrosel
+{
+	height: 230px;
+}
+
+
+}
+
+
+@media only screen and (max-width:600px)
+{
+ 
+.slider-carossel
+{
+	height: 511px;
+} 
+
+.slider-carossel .icon_car .quadros_icon  h4
+{
+	font-family: arial;
+	margin-top: 10px;
+	margin-left: 15px;
+	font-size: 12px;
+	color: black;
+}
+
+.slider-carossel .carrosel #div_central
+{
+	/*border: 1px solid blue;*/
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	margin-top: 180px;
+	margin-left: 90px;
+	border-radius: 50%;
+}
+
+}
+
+
+
